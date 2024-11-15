@@ -1,0 +1,104 @@
+<title>Formulario de Contacto - Aventura Global</title>
+    <style>
+    
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        /* Estilo para la barra de navegación */
+#barra-navegacion {
+    background-color: #2980b9;
+    padding: 10px 0;
+}
+
+#barra-navegacion ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#barra-navegacion ul li {
+    display: inline;
+}
+
+#barra-navegacion a {
+    text-decoration: none;
+    color: rgb(155, 158, 240);
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+#barra-navegacion a:hover {
+    background-color: #1abc9c;
+    border-radius: 5px;
+}
+        /* Contenedor principal del formulario */
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        p {
+            color: #34495e;
+            text-align: center;
+        }
+
+        /* Estilos para los campos del formulario */
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo del botón */
+        button {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2ecc71;
+        }
+
+        /* Estilos del pie de formulario */
+        .form-footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #7f8c8d;
+        }
+
+        .form-footer a {
+            color: #27ae60;
+            text-decoration: none;
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>

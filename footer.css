@@ -1,0 +1,87 @@
+ //Footer Agencia Aventura Global//
+      
+        {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1{text-align: center;}
+
+        /* Estilos para el footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        footer h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        /* Enlaces de redes sociales */
+        .social-links {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .social-links li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .social-links a:hover {
+            color: #00bcd4;
+        }
+
+        /* Estilo para el formulario del boletín */
+        .newsletter {
+            margin: 20px 0;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            width: 250px;
+            margin-right: 10px;
+        }
+
+        .newsletter input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .newsletter input[type="submit"]:hover {
+            background-color: #0097a7;
+        }
+
+        /* Estilos de dirección y otros datos */
+        .footer-info {
+            margin: 10px 0;
+        }
+
+        .social-icon img {
+            width: 30px;
+            height: 30px;
+          }

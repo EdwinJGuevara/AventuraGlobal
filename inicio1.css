@@ -1,0 +1,289 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7f7f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Estilos para la barra de navegación */
+#barra-navegacion {
+    background-color: #2980b9;
+    padding: 10px 0;
+}
+
+#barra-navegacion ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#barra-navegacion ul li {
+    display: inline;
+}
+
+#barra-navegacion a {
+    text-decoration: none;
+    color: rgb(155, 158, 240);
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#barra-navegacion a:hover {
+    background-color: #1abc9c;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Sección principal (Hero) */
+.hero {
+    background-image: url('imagenes/turismo_sostenible.webp');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    background-color: #1abc9c;
+    color: rgb(28, 26, 26);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero-content .btn:hover {
+    background-color: #16a085;
+}
+
+/* Sección de destinos */
+.destinos {
+    padding: 50px 20px;
+    background-color: #f5f8fa;
+    text-align: center;
+}
+
+.destinos h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.destino-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.destino-item {
+    background-color: #c1c1c2;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 300px;
+    margin: 10px;
+}
+
+.destino-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destino-item h3 {
+    padding: 15px;
+}
+
+.destino-item:hover {
+    transform: scale(1.05);
+}
+
+/* Sección de servicios */
+#servicios {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f5f8fa;
+}
+
+#servicios h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.servicios-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.servicio-item {
+    width: 250px;
+    background-color: #2980b9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.servicio-item:hover {
+    transform: scale(1.05);
+}
+
+.servicio-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.servicio-text {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.icon-check {
+    color: #4CAF50;
+    margin-right: 8px;
+}
+
+/* Sección sobre nosotros */
+#nosotros {
+    padding: 40px 20px;
+    background-color: #f7f7f8;
+    text-align: center;
+}
+
+#nosotros h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #070505;
+    text-transform: uppercase;
+}
+
+.nosotros-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nosotros-text {
+    max-width: 500px;
+    font-size: 1.5rem;
+    color: #070505;
+}
+
+.nosotros-img {
+    flex-shrink: 1;
+    width: 450px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.nosotros-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    /* Barra de navegación */
+    #barra-navegacion ul {
+        flex-direction: column;
+    }
+
+    /* Servicios */
+    .servicios-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Destinos */
+    .destino-list {
+        flex-direction: column;
+    }
+
+    /* Nosotros */
+    .nosotros-container {
+        flex-direction: column;
+    }
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+}
+
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+    transform: scale(1.2);
+}
+
+/* Animación general */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 1s ease-out;
+}
